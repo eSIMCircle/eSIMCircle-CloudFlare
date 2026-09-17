@@ -312,46 +312,39 @@ body.cloudflare-home-layout .btn-ghost {
 }
 body.cloudflare-home-layout .page-shell { overflow:visible; }
 body.cloudflare-home-layout .hero {
-  min-height:100vh;
-  padding:112px 48px 48px;
+  min-height:auto;
+  padding:104px 48px 42px;
   text-align:left;
-  align-items:stretch;
+  align-items:flex-start;
   justify-content:flex-start;
-  background:
-    linear-gradient(90deg, #111827 0 64%, #0f172a 64% 100%);
+  background:linear-gradient(180deg, #111827 0%, #0f172a 100%);
 }
 body.cloudflare-home-layout .hero:before { display:none; }
 body.cloudflare-home-layout .hero-inner {
   max-width:1240px;
   margin:0 auto;
-  min-height:calc(100vh - 160px);
   display:grid;
   grid-template-columns:minmax(0,1fr) 360px;
-  grid-template-rows:1fr auto;
   gap:16px;
-  align-items:stretch;
+  align-items:start;
 }
 body.cloudflare-home-layout .hero-copy {
   grid-column:1;
-  grid-row:1;
   display:flex;
   flex-direction:column;
-  justify-content:center;
+  justify-content:flex-start;
   border:1px solid var(--border);
-  padding:clamp(34px,6vw,76px);
+  padding:clamp(30px,5vw,58px);
   background:linear-gradient(135deg,#172033,#111827);
 }
 body.cloudflare-home-layout .hero-panel {
   grid-column:2;
-  grid-row:1 / 3;
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
+  justify-content:flex-start;
   border:1px solid var(--border);
   padding:28px;
-  background:
-    linear-gradient(180deg, transparent 0 38%, rgba(31,41,55,.96) 38% 100%),
-    repeating-linear-gradient(135deg, rgba(249,115,22,.16) 0 1px, transparent 1px 18px);
+  background:#172033;
   box-shadow:none;
 }
 body.cloudflare-home-layout .hero-panel .sec-title { font-size:2rem!important; }
@@ -373,8 +366,7 @@ body.cloudflare-home-layout .hero-sub {
 }
 body.cloudflare-home-layout .hero-btns { justify-content:flex-start; }
 body.cloudflare-home-layout .hero-stats {
-  grid-column:1;
-  grid-row:2;
+  grid-column:1 / -1;
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
   gap:10px;
@@ -442,7 +434,7 @@ body.cloudflare-home-layout .affiliate-banner {
 }
 @media(max-width:980px){
   body.cloudflare-home-layout nav{top:10px;left:12px;right:12px;padding:0 18px}
-  body.cloudflare-home-layout .hero{min-height:auto;padding:94px 20px 42px}
+  body.cloudflare-home-layout .hero{min-height:auto;padding:88px 20px 34px}
   body.cloudflare-home-layout .hero-inner,
   body.cloudflare-home-layout .plans-header,
   body.cloudflare-home-layout .dest-header,
